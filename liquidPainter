@@ -1,0 +1,24 @@
+import org.code.neighborhood.*;
+public class liquidPainter extends PainterPlus {
+  /**
+  *This paints all the liquid inside of  the drink
+  *This incorporates a while loop and if statement.
+*/
+public void liquid(){  
+ 
+ while(!isOnPaint()){
+         paint("orange");
+   move();
+   if(isOnPaint()){
+      turnLeft();
+    move();
+    turnLeft();
+    move();
+   }
+      }
+ 
+  
+  
+  
+}
+}

@@ -1,0 +1,74 @@
+import org.code.neighborhood.*;
+public class bobaPainter extends PainterPlus {
+  
+   /**
+  *This gets the boba Painter in position so he can start painting
+  *boba inside the drink
+*/
+  
+  public void getInPosition(){
+    moveCenter();
+    turnRight();
+    moveCenter();
+  }
+   /**
+  * This is the actual code for the boba painter which makes the boba pearls in the 
+  * boba drink
+*/
+  public void paintBoba(String color){
+    paint(color);
+    move();
+    turnLeft();
+    move();
+     paint(color);
+    turnRight();
+    move();
+     paint(color);
+    turnRight();
+    move();
+     paint(color);
+    turnLeft();
+    move();
+    turnLeft();
+    move();
+     paint(color);
+    turnAround();
+    turnLeft();
+    move();
+    paint(color);
+    move();
+    turnRight();
+    move();
+    paint(color);
+    turnLeft();
+    move();
+    turnLeft();
+    paint(color);
+    move();
+    turnRight();
+    move();
+    paint(color);
+    turnRight();
+    move();
+    move();
+    move();
+    
+    
+  }
+   /**
+  *This gets the boba Painter to paint the boba pearls that "float" in the liquid
+*/
+public void floatingBoba(String color){
+  turnRight();
+  move();
+  move();
+  move();
+  paint(color);
+  move();
+  turnLeft();
+  
+  
+}
+  
+  
+}

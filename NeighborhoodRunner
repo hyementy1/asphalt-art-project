@@ -1,0 +1,232 @@
+import org.code.neighborhood.*;
+/**
+*this entire program is meant to draw a boba drink 
+* on a cyan background
+*/
+public class NeighborhoodRunner {
+    public static void main(String[] args) {
+        BackgroundPainter h = new BackgroundPainter();
+      liquidPainter c = new liquidPainter();
+      bobaPainter a = new bobaPainter();
+        h.paintBackground("cyan");
+h.turnLeft();
+    while(h.canMove()){
+      h.move();
+    }
+h.turnRight();
+      //Background Painter h gets in position
+     h.moveCenter();
+     h.turnRight();
+      h.moveCenter();
+      h.turnRight();
+      h.move();
+      h.move();
+      h.move();
+      h.move();
+      h.turnLeft();
+      h.move();
+      h.move();
+      h.move();
+      h.move();
+      h.move();
+      h.move();
+      h.move();
+      h.move();
+      h.turnLeft();
+      h.move();
+      h.move();
+      h.move();
+      h.move();
+      h.move();
+      h.move();
+      h.move();
+      h.turnLeft();
+
+      // background painter h starts to paint the outline
+      h.outline();
+      
+      h.turnLeft();
+      h.move();
+      h.move();
+      h.move();
+      h.move();
+      h.turnRight();
+      
+    h.moveCenter();
+      h.turnAround();
+      h.move();
+       h.move();
+      h.turnAround();
+    // background painter h starts to paint the straw
+      h.move();
+      h.paint("black");
+        h.move();
+      h.paint("black");
+        h.move();
+      h.paint("black");
+        h.move();
+      h.paint("black");
+        h.move();
+      h.paint("black");
+      h.move();
+      h.paint("black");
+      h.turnRight();
+      h.move();
+      h.turnRight();
+      h.paint("black");
+        h.move();
+      h.paint("black");
+        h.move();
+      h.paint("black");
+        h.move();
+      h.paint("black");
+        h.move();
+      h.paint("black");
+      h.move();
+      h.paint("black");
+      h.turnAround();
+      h.move();
+         h.move();
+         h.move();
+         h.move();
+         h.move();
+      h.turnLeft();
+      h.move();
+      h.turnRight();
+      h.turnAround();
+      h.moveCenter();
+      h.move();
+         h.move();
+         h.move();
+      h.turnRight();
+       h.move();
+         h.move();
+         h.move();
+      h.turnRight();
+      // scrapes the paint from the inside of the outline
+     h.Scrape();
+       
+      
+  // liquid painter c starts to get in position
+      c.moveCenter();
+      c.turnRight();
+      c.moveCenter();
+      c.turnAround();
+    
+      while(!c.isOnPaint()){
+        c.move();
+      }
+
+c.turnLeft();
+      c.move();
+      c.move();
+      c.move();
+      c.move();
+      c.move();
+      c.turnLeft();
+      c.move();
+      
+    // liquid painter c starts to paint
+           c.liquid();
+
+      c.turnLeft();
+      c.move();
+      c.move();
+      c.turnRight();
+      c.liquid();
+       c.turnLeft();
+      c.move();
+      c.move();
+      c.turnRight();
+      c.liquid();
+       c.turnLeft();
+      c.move();
+      c.move();
+      c.turnRight();
+      c.liquid();
+
+
+// boba painter a starts to move into position
+      a.getInPosition();
+    a.move();
+      a.move();
+      a.move();
+      a.move();
+      a.move();
+      a.move();
+      a.turnLeft();
+      a.move();
+      a.move();
+      a.turnAround();
+      // boba painter a starts to paint bottom layer of boba
+      a.paintBoba("black");
+      // boba painter a starts to paint floating boba
+      a.floatingBoba("black");
+      a.move();
+      if(a.isFacingNorth()){
+        a.move();
+        a.paint("black");
+          a.move();
+        a.move();
+        a.paint("black");
+        a.turnRight();
+        a.move();
+        a.move();
+        a.turnLeft();
+        a.move();
+        a.paint("black");
+        a.turnLeft();
+        a.move();
+        a.move();
+         a.move();
+        a.move();
+        a.paint("black");
+        a.move();
+        a.turnLeft();
+        a.move();
+        a.move();
+        a.paint("black");
+        a.move();
+        a.move();
+        
+        a.paint("black");
+a.turnLeft();
+        a.move();
+           a.move();
+           a.move();
+           a.move();
+           a.move();
+        a.paint("black");
+        a.turnLeft();
+            a.move();
+           a.move();
+           a.move();
+           a.move();
+        a.move();
+           a.move();
+        a.paint("black");
+        a.turnLeft();
+        a.move();
+        a.move();
+        a.turnLeft();
+        a.move();
+        a.paint("black");
+
+      a.turnRight();
+        a.move();
+        a.move();
+        a.move();
+        a.turnRight();
+        a.move();
+        a.move();
+        a.paint("black");
+        a.turnRight();
+        a.move();
+        a.move();
+          a.move();
+        a.paint("black");
+      }
+    }
+}
+
+    
