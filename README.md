@@ -18,7 +18,7 @@ This project was created on Code.org's JavaLab platform using the built-in Neigh
 
 ## Output:
 
-[the output of my asphalt art project](mural.png)
+![the output of my asphalt art project](mural.png)
 
 ## Reflection
 
