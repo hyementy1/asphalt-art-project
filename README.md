@@ -23,7 +23,7 @@ This project was created on Code.org's JavaLab platform using the built-in Neigh
 ## Reflection
 
 1. Describe your project.
-My project is an image of a boba drink that is on a cyan background. The image depicts an outline of a drink that has an orange liquid in with boba pearls on the bottom of the drink or floating around in the drink. Said image is on a cyan background
+My project is an image of a boba drink that is on a cyan background. The image depicts an outline of a drink that has an orange liquid in with boba pearls on the bottom of the drink or floating around in the drink. Said image is on a cyan background.
    
 
 2. What are two things about your project that you are proud of?
